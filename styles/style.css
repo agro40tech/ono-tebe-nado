@@ -1,1 +1,60 @@
 /* место для вашего кода */
+
+/* Блок шапки */
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 92px 49px 92px 51px;
+}
+
+/* Меню навигации в шапке */
+.header__menu{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header__menu-item {
+  list-style: circle;
+}
+
+.no-list-style {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Логотип в шапке */
+.header__logo {
+ display: block;
+ width: 148px;
+}
+
+/* Контакты в шапке */
+.header__contacts {
+  
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+/* Секция cover */
+.cover{
+ 
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.cover__title {
+  padding: 165px, 50px, 147px, 50px;
+}
