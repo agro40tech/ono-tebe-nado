@@ -6,7 +6,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  padding: 92px 49px 92px 51px;
+  padding: 90px 50px;
 }
 
 /* Меню навигации в шапке */
