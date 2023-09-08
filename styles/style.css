@@ -6,7 +6,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  padding: 90px 50px;
+  padding: 88px 50px;
 }
 
 /* Меню навигации в шапке */
@@ -108,7 +108,7 @@
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 40px;
+  word-spacing: 20px;
 }
 
 /* Кнопка подзоголовка */
