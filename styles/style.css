@@ -134,7 +134,7 @@
 
 /* Cекция лотов */
 .lots {
-  padding: 180px 50px;
+  padding: 180px 50px 0px 50px;
 }
 
 /* Заголовок лотов */
@@ -217,7 +217,7 @@
 
 /* Секция about */
 .about {
-  padding: 180px 50px;
+  padding: 180px 50px 180px 50px;
 }
 
 .about__column {
