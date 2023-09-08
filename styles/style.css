@@ -255,3 +255,36 @@
   line-height: normal;
   grid-column-start: 2;
 }
+
+/* Секция подвала */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding: 0 50px 90px 50px;
+}
+
+.footer__contacts {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.footer__menu {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.footer__social-list-item {
+  width: 10%;
+}
