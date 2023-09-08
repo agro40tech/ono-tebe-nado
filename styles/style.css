@@ -227,7 +227,7 @@
 }
 
 .about__logo {
-  margin: 0 80px 0 80px;
+  margin: 0 85px 0 85px;
   background-color: black;
   border-radius: 50%;
 }
@@ -279,7 +279,7 @@
 .footer__social-list {
   display: flex;
   justify-content: flex-end;
-  gap: 40px;
+  gap: 70px;
 }
 
 .footer__social-list-item {
