@@ -227,9 +227,7 @@
 }
 
 .about__logo {
-  max-width: 430px;
-  max-height: 240px;
-  margin: 0 95px 0 95px;
+  margin: 0 80px 0 80px;
   background-color: black;
   border-radius: 50%;
 }
