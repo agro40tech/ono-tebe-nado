@@ -3,8 +3,8 @@
 /* Блок шапки */
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  grid-template-columns: 2fr 1.5fr 0.8fr;
+  justify-content: space-between;
   align-items: center;
   padding: 88px 50px;
 }
@@ -46,7 +46,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 135%;
-  /* padding-left: 205px; */
 }
 
 /* Сброс дефолтной линии и назначение новой (там баг дефолтная линия лежит в цифрах) */
@@ -61,6 +60,9 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Блок с затемнением */
@@ -86,17 +88,19 @@
   color: white;
   font-size: 100px;
   font-weight: 700;
-  line-height: 115px;
+  line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
 .text-center {
   text-align: center;
+  line-height: 100%;
 }
 
 .text-right {
   text-align: right;
+  line-height: 100%;
 }
 
 /* Не обычный отступ букв для заголовка оно тебе надо */
@@ -123,14 +127,14 @@
   text-align: center;
   font-size: 22px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 128%;
   text-transform: uppercase;
   word-spacing: 10px;
 }
 
 /* Кнопка подзоголовка */
 .bet-button {
-  border: 1px solid white;
+  border: 1px solid currentColor;
   background-color: unset; /* Решил выбрать unset вместо transparent если критично пометьте почему лучше прозрачный */
   padding: 12px 32px;
   color: #fff;
@@ -164,7 +168,18 @@
 .lots__card-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 25px;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 430px;
+  min-height: 480px;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 /* Обетка для карточки в секции лотов */
@@ -174,7 +189,6 @@
   justify-content: space-between;
   color: white;
   height: 100%;
-  max-width: 430px;
   position: relative;
 }
 
@@ -182,7 +196,6 @@
 .card__title {
   font-size: 22px;
   font-weight: 700;
-  line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
   padding: 50px 40px 30px 40px;
@@ -192,7 +205,6 @@
 .card__text {
   font-size: 20px;
   font-weight: 400;
-  line-height: 120%;
   padding: 0 40px 50px 40px;
 }
 
@@ -288,4 +300,5 @@
 
 .footer__social-list-item {
   width: 10%;
+  height: 10%;
 }
