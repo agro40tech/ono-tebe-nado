@@ -3,10 +3,9 @@
 /* Блок шапки */
 .header {
   display: grid;
-  grid-template-columns: 2fr 1.5fr 0.8fr;
-  justify-content: space-between;
+  grid-template-columns: 2fr 1.67fr 0.8fr;
   align-items: center;
-  padding: 88px 50px;
+  padding: 90px 50px;
 }
 
 /* Меню навигации в шапке */
@@ -37,7 +36,7 @@
 /* Логотип в шапке */
 .header__logo {
   display: block;
-  width: 145px;
+  width: 140px;
 }
 
 /* Контакты в шапке */
@@ -62,7 +61,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 /* Блок с затемнением */
@@ -79,7 +77,10 @@
 
 /* Обертка заголовка cover */
 .cover__tittle {
-  padding: 165px 50px 145px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 165px 50px 135px 50px;
 }
 
 /* Текст, заголовок у cover, ( оно тебе надо ) */
@@ -129,7 +130,7 @@
   font-weight: 400;
   line-height: 128%;
   text-transform: uppercase;
-  word-spacing: 10px;
+  word-spacing: 18px;
 }
 
 /* Кнопка подзоголовка */
@@ -175,7 +176,7 @@
 .lots__card-list-item {
   flex-grow: 1;
   width: 430px;
-  min-height: 480px;
+  min-height: 450px;
 }
 
 .card-link {
@@ -237,18 +238,18 @@
 
 /* Секция about */
 .about {
-  padding: 180px 50px 180px 50px;
+  padding: 180px 50px 0 50px;
 }
 
 /* Обертка для гридов в сеции about */
 .about__column {
   display: grid;
-  grid-template-columns: 415px 1fr;
-  gap: 25px;
+  grid-template-columns: 430px 1fr;
+  grid-column-gap: 25px;
 }
 
 .about__logo {
-  margin: 0 85px 0 85px;
+  margin: 0 95px 5px 95px;
   background-color: black;
   border-radius: 50%;
 }
@@ -262,7 +263,7 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  align-self: center;
+  padding: 100px 0 100px 0;
 }
 
 /* Текст в секции about */
@@ -270,14 +271,16 @@
   font-size: 20px;
   font-weight: 400;
   grid-column-start: 2;
+  padding-bottom: 25px;
 }
 
 /* Секция подвала */
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 300px;
   justify-content: space-between;
-  padding: 0 50px 90px 50px;
+  padding: 155px 50px 90px 50px;
 }
 
 /* Меню навигации в сеции подвала */
@@ -295,10 +298,10 @@
 .footer__social-list {
   display: flex;
   justify-content: flex-end;
-  gap: 50px;
+  gap: 45px;
 }
 
 .footer__social-list-item {
-  width: 10%;
-  height: 10%;
+  width: 50px;
+  height: 50px;
 }
