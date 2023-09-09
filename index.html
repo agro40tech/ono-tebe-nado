@@ -16,9 +16,7 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item no-list-style">
-            <a
-              href="#"
-              class="header__menu-link header__menu-item_active no-list-style"
+            <a href="#" class="header__menu-link header__menu-item_active"
               >главная</a
             >
           </li>
@@ -36,93 +34,93 @@
           src="./images/logo-black.svg"
           alt="Оно тебе надо"
       /></a>
-      <address class="header__contacts">
-        <a class="header__contacts-item" href="tel:+999955555555"
-          >+9 999 555 55555</a
+      <address class="contacts">
+        <a class="contacts-item" href="tel:+999955555555">+9 999 555 55555</a
         ><br />
-        <a class="header__contacts-item" href="mailto:info@sobaka.ge"
-          >info@sobaka.ge</a
-        >
-        <p class="header__contacts-item">
-          наб. Принсенграхт 263-265, Амстердам
-        </p>
+        <a class="contacts-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="contacts-item">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
     <main>
       <section class="cover">
-        <div class="overlay">
-          <h1 class="cover__tittle">
-            <span class="accent-span"
-              >о<span class="letter-spacing-extended">но</span></span
-            >
-            <span class="accent-span text-center"
-              >те<span class="letter-spacing-extended">бе</span></span
-            >
-            <span class="accent-span text-right"
-              ><span class="letter-spacing-extended">н</span>адо</span
-            >
-          </h1>
-          <div class="cover__description">
-            <p class="cover__description-text">
-              Аукцион вещей, в которые никто не верил
-            </p>
-            <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
-          </div>
+        <div class="overlay"></div>
+
+        <!-- Второй класс нужен для повышение z-index для контента, выше чем overlay -->
+        <h1 class="cover__tittle overlay__content">
+          <span class="accent-span"
+            >о<span class="letter-spacing-extended">но</span></span
+          >
+          <span class="accent-span text-center"
+            >те<span class="letter-spacing-extended">бе</span></span
+          >
+          <span class="accent-span text-right"
+            ><span class="letter-spacing-extended">н</span>ад<span
+              class="no-letter-spacing"
+              >о</span
+            ></span
+          >
+        </h1>
+        <div class="cover__description overlay__content">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button type="button" class="bet-button overlay__content">
+            СДЕЛАТЬ СТАВКУ
+          </button>
         </div>
       </section>
       <section class="lots" id="lots">
-        <h1 class="lots__heading">лоты</h1>
+        <h2 class="lots__heading">лоты</h2>
         <ul class="lots__card-list no-list-style">
           <li class="lots__card-list-item">
             <a href="#" class="no-list-style">
               <article class="card card_type_film">
-                <div class="overlay">
-                  <h1 class="card__title">
-                    Фильм режиссёра, который бросил киношколу
-                  </h1>
-                  <p class="card__text">
-                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                    ставка, если бы вы не знали, что режиссёр — Пол Томас
-                    Андерсон?
-                  </p>
-                </div>
+                <!-- Блок overlay -->
+                <div class="overlay"></div>
+                <h3 class="card__title overlay__content">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card__text overlay__content">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a href="#" class="no-list-style">
               <article class="card card_type_book">
-                <div class="overlay">
-                  <h1 class="card__title">
-                    Книга, где описан один скучный день из жизни рекламного
-                    агента
-                  </h1>
-                  <p class="card__text">
-                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
-                    и с переходами на древнеанглийский. В ней одновременно
-                    рассказывается о 16 июня 1904 года и об истории литературы,
-                    начиная с античных времён. И это всё накладывается на
-                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                    Джеймса Джойса?
-                  </p>
-                </div>
+                <!-- Блок overlay -->
+                <div class="overlay"></div>
+                <h3 class="card__title overlay__content">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="card__text overlay__content">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a href="#" class="no-list-style">
               <article class="card card_type_picture">
-                <div class="overlay">
-                  <h1 class="card__title">
-                    Картина, которую повторит даже 5-летний сын маминой подруги
-                  </h1>
-                  <p class="card__text">
-                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков… Сколько бы вы на такое поставили, если бы не знали,
-                    что это — одна из революционных работ Кандинского?
-                  </p>
-                </div>
+                <!-- Блок overlay -->
+                <div class="overlay"></div>
+                <h3 class="card__title overlay__content">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card__text overlay__content">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков… Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
               </article>
             </a>
           </li>
@@ -138,7 +136,7 @@
               class="about__logo-image"
             />
           </div>
-          <h1 class="about__title">Об аукционе</h1>
+          <h2 class="about__title">Об аукционе</h2>
           <p class="about__text">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
@@ -158,23 +156,16 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__contacts">
-        <a class="footer__contacts-item" href="tel:+999955555555"
-          >+9 999 555 55555</a
+      <address class="contacts">
+        <a class="contacts-item" href="tel:+999955555555">+9 999 555 55555</a
         ><br />
-        <a class="footer__contacts-item" href="mailto:info@sobaka.ge"
-          >info@sobaka.ge</a
-        >
-        <p class="footer__contacts-item">
-          наб. Принсенграхт 263-265, Амстердам
-        </p>
+        <a class="contacts-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="contacts-item">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list no-list-style">
           <li class="footer__menu-item">
-            <a
-              href="#"
-              class="footer__menu-link footer__menu-item_active no-list-style"
+            <a href="#" class="footer__menu-link footer__menu-item_active"
               >главная</a
             >
           </li>
