@@ -3,7 +3,7 @@
 /* Блок шапки */
 .header {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 0.4fr 0.5fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 0.4fr 0.5fr 1.1fr;
   align-items: center;
   padding: 90px 50px;
 }
