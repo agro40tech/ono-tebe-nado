@@ -16,11 +16,16 @@
 
 .header__menu-list {
   display: flex;
-  gap: 26px;
+  gap: 28px;
 }
 
 .header__menu-item {
   list-style: circle;
+}
+
+.header__menu-item a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
 /* Сброс подчеривания у активной кнопки */
@@ -43,8 +48,6 @@
 
 /* Контакты в шапке */
 .contacts {
-  /* Жесткая ширина нужна для правильных переносов текста */
-  width: 240px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -299,6 +302,11 @@
   font-size: 18px;
   font-weight: 400;
   text-align: center;
+}
+
+.footer__menu-item a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
 .footer__menu-item_active {
